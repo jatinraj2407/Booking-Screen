@@ -1,8 +1,8 @@
-##BookingScreen
+# BookingScreen
 
 This project is a React component that displays a list of bookings with various controls for filtering, sorting, and searching the data. The data is fetched from a local JSON file. Users can also export the filtered and sorted data to a CSV file. Additionally, the component includes a Dark Mode toggle.
 
-Features
+## Features
 
 - Filter by Status: Filter the bookings by status (`All`, `Confirmed`, `Pending`, `Cancelled`).
 - Sort by Date or Mentor: Sort the bookings by date or mentor, in ascending or descending order.
@@ -10,7 +10,7 @@ Features
 - Export to CSV: Export the currently displayed data to a CSV file.
 - Dark Mode Toggle: Switch between light and dark modes.
 
-BookingScreen.js
+## BookingScreen.js
 
 This file contains the React component for displaying and managing the bookings data. It includes:
 
@@ -18,7 +18,7 @@ This file contains the React component for displaying and managing the bookings 
 - Event Handlers: Handling changes to filters, sort options, search input, and dark mode toggle.
 - CSV Export: Functionality to export the filtered and sorted data to a CSV file.
 
-BookingScreen.css
+## BookingScreen.css
 
 This file contains the styles for the `BookingScreen` component, including:
 
@@ -26,7 +26,7 @@ This file contains the styles for the `BookingScreen` component, including:
 - Interactive Styles: Enhances the user experience with focus styles, hover effects, and dark mode styles.
 - Table Styles: Styles the bookings table, including different colors for different booking statuses.
 
-Installation
+## Installation
 
 1. Clone the repository:
 
@@ -46,7 +46,7 @@ Installation
 
     The application will start on `http://localhost:3000`.
 
-Usage
+## Usage
 
 Once the application is running:
 
