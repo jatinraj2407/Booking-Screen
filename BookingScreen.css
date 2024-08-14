@@ -1,0 +1,141 @@
+.booking-screen {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: beige;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.booking-screen.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+h1.shiny-text {
+  font-size: 80px;
+  font-weight: bold;
+  color: #000; /* This will be overridden by background-clip */
+  background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+  background-size: 200% 100%;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: shine 2s infinite;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-container,
+.sort-container,
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select,
+input[type="text"] {
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+select:focus,
+input[type="text"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.export-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-table th, .booking-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.booking-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.booking-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.booking-table tr:hover {
+  background-color: #ddd;
+}
+
+.booking-table td.confirmed {
+  color: darkgreen;
+}
+
+.booking-table td.pending {
+  color: blue;
+}
+
+.booking-table td.cancelled {
+  color: indianred;
+}
+
+.dark-mode-toggle {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #45a049;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
